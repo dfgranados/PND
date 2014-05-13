@@ -1,0 +1,2 @@
+[02-May-2014 15:51:47 UTC] PHP Fatal error:  Call to undefined function of_get_option() in /home3/ppavlova/public_html/wp-content/themes/Adament/css/custom.php on line 13
+[03-May-2014 00:07:56 UTC] PHP Fatal error:  Call to undefined function of_get_option() in /home3/ppavlova/public_html/wp-content/themes/Adament/css/custom.php on line 13

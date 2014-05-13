@@ -1,0 +1,8 @@
+[03-May-2014 00:08:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home3/ppavlova/public_html/wp-admin/custom-header.php on line 1248
+[03-May-2014 00:08:52 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in /home3/ppavlova/public_html/wp-admin/custom-header.php on line 1268
+[03-May-2014 00:08:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home3/ppavlova/public_html/wp-admin/custom-header.php on line 1248
+[03-May-2014 00:08:53 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in /home3/ppavlova/public_html/wp-admin/custom-header.php on line 1268
+[03-May-2014 00:08:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home3/ppavlova/public_html/wp-admin/custom-header.php on line 1248
+[03-May-2014 00:08:58 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in /home3/ppavlova/public_html/wp-admin/custom-header.php on line 1268
+[03-May-2014 00:08:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home3/ppavlova/public_html/wp-admin/custom-header.php on line 1248
+[03-May-2014 00:08:58 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in /home3/ppavlova/public_html/wp-admin/custom-header.php on line 1268
