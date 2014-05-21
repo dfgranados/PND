@@ -329,3 +329,12 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 	$existing_mimes['svg'] = 'mime/type';
 	return $existing_mimes;
 }
+
+//[foobar]
+function foobar_func( $atts ){
+	return "foo and dat bar";
+}
+add_shortcode( 'foobar', 'foobar_func' );
+
+
+

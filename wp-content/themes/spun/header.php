@@ -38,7 +38,7 @@
 			<h1 class="screen-reader-text"><?php _e( 'Menu', 'spun' );?></h1>
 			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'spun' ); ?>"><?php _e( 'Skip to content', 'spun' ); ?></a></div>
 				  <div style="width: 100%;">
-					    <div style="float: left; width: 300px; margin-top: 5px;"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>
+					    <div style="float: left; width: 500px; margin-top: 5px;"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>
 						<div style="float: right;">
 					  			<div style="width: 150px;">
 								    <div style="float: left;"><a href="https://www.facebook.com/paula.pavlova.3" target="_blank"><img src="http://pipndipyoga.com/wp-content/uploads/2014/05/facebook500.png" width ="30px"/></a></div>

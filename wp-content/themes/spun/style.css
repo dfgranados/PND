@@ -308,22 +308,82 @@ figure {
 }
 table {
 	font-size: 90%;
-	margin: 0 0 1.5em;
 	width: 100%;
 }
+
+.schedtable{
+	border: 0.75em solid #A1A09E;
+	color: white;
+	background-color: #A4E1DC;
+	width:100%;
+	margin: 0 0 0 -0.75em;
+	table-layout: fixed;
+}
+.schedtable tbody{
+	display: block;
+	border: 0.25em solid white;
+}
+.schedtable  tr{
+	line-height:40px;
+}
+
+.schedtable td{
+	text-align: center;
+	width: 200px;
+	overflow:hidden;
+	border-left: 0.13em solid white;
+	border-right: 0.13em solid white;
+}
+
+.mschedtable{
+	margin: auto;
+	border: 0.75em solid #A1A09E;
+	color: white;
+	background-color: #A4E1DC;
+	width:75%;
+	table-layout: fixed;
+}
+
+.mschedtable td{
+	text-align: center;
+	border-left: 0.13em solid white;
+	border-right: 0.13em solid white;
+}
+.mschedtable tbody{
+	display: block;
+	border: 0.25em solid white;
+}
+
+
 td {
-	border-bottom: 1px solid #eee;
-	padding: 5px 10px;
+/*	border-bottom: 1px solid #eee;
+	padding: 5px 10px;*/
 }
+
+.schedule-entry {
+	background: rgba(255,255,255,.45);
+	color:gray;
+	border-bottom: 0.1em solid white;
+	border-top:  0.1em solid white;
+	line-height:1.2em;
+	vertical-align: middle;
+	padding:0.4em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 th {
-	border-bottom: 1px solid #eee;
-	font-size: 16px;
-	font-size: 1.6rem;
-	padding: 5px 10px;
-	text-transform: uppercase;
+	border-left: 0.13em solid white;
+	border-right: 0.13em solid white;
+	border-bottom: 0.25em solid white;
+	text-align: center;
+	width: 14%;
+	overflow:hidden;
 }
-tr:hover {
-	background: rgba(0,0,0,.01);
+th img{
+	vertical-align: middle;
+}
+td:hover {
+	background: rgba(0,0,0,.1);
 }
 button,
 input,
@@ -626,7 +686,7 @@ a:active {
 	color: #444;
 	cursor: pointer;
 	display: block;
-	float: right;
+	float: left;
 	font-family: Quicksand, Helvetica, Arial, sans-serif;
 	-webkit-text-stroke: .35px; /* Hack to fix thin text in Windows */
 	font-size: 14px;
