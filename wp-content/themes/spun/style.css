@@ -315,9 +315,14 @@ table {
 	border: 0.75em solid #A1A09E;
 	color: white;
 	background-color: #A4E1DC;
-	width:100%;
+	width:900px;
 	margin: 0 0 0 -0.75em;
 	table-layout: fixed;
+	background-image:url(http://pipndipyoga.com/wp-content/uploads/2014/05/desertyogifaded.jpg);
+	background-repeat:no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+	backgr
 }
 .schedtable tbody{
 	display: block;
@@ -362,6 +367,17 @@ td {
 
 .schedule-entry {
 	background: rgba(255,255,255,.45);
+	color:gray;
+	border-bottom: 0.1em solid white;
+	border-top:  0.1em solid white;
+	line-height:1.2em;
+	vertical-align: middle;
+	padding:0.4em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.schedule-entry:hover {
+	background: rgba(255,255,255,1);
 	color:gray;
 	border-bottom: 0.1em solid white;
 	border-top:  0.1em solid white;
@@ -741,6 +757,149 @@ a:active {
 	padding: 50px 0;
 }
 
+/* =Donation Page Layout
+----------------------------------------------- */
+
+.donation-box{
+	border: 2px solid #A4E1DC;
+	background-color: rgba(196, 202, 200, 50);
+	width: 30%;
+	text-align: center;
+	}
+
+#box-a
+{
+	float:left;
+	margin-right:4.5%;
+}
+#box-b
+{
+	float:left;
+}
+#box-c
+{
+	float:right;
+}
+#box-d
+{
+	font-size: 1.5em;
+	color:white;
+}
+
+
+#dollar-sign {
+	display:inline-block;
+	color: #31BAB3;
+	font-size: 60pt; 
+	font-size: 4.5vw;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+#dollar-amount {
+	display:inline-block;
+	color:white;
+	font-size: 80pt; 
+	font-size: 6vw;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.donation-box img{
+	width: 100%; 
+	opacity: 1;
+	margin:0 0 -8px 0;
+}
+
+.donation-box img:hover
+{
+	opacity: 0;
+}
+
+.donation-box .pic
+{
+	border:2px solid #A4E1DC;
+	width: 100%; 
+	margin-left:-2px;
+}
+
+#box-a-pic
+{
+	background: url(http://localhost:8888/PND/wp-content/uploads/2014/05/donation-a.jpg) no-repeat;
+	background-size: 100%;
+}
+
+#box-b-pic
+{
+	background: url(http://localhost:8888/PND/wp-content/uploads/2014/05/donation-b.jpg) no-repeat;
+	background-size: 100%;
+}
+
+
+#box-c-pic
+{
+	background: url(http://localhost:8888/PND/wp-content/uploads/2014/05/donation-c.jpg) no-repeat;
+	background-size: 100%;
+}
+
+/* =Donation Page Layout - Mobile
+----------------------------------------------- */
+
+.donation-box-mobile{
+	border: 2px solid #A4E1DC;
+	background-color: rgba(196, 202, 200, 50);
+	width: 80%;
+	text-align: center;
+	margin: 0 auto 1em auto;
+	}
+
+.donation-box-mobile #dollar-sign {
+	display:inline-block;
+	color: #31BAB3;
+	font-size: 60pt; 
+	font-size: 18vw;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.donation-box-mobile #dollar-amount {
+	display:inline-block;
+	color:white;
+	font-size: 80pt; 
+	font-size: 24vw;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.donation-box-mobile img{
+	width: 100%; 
+	opacity: 1;
+	margin:0 0 -8px 0;
+}
+
+.donation-box-mobile img:hover
+{
+	opacity: 0;
+}
+
+.donation-box-mobile .pic
+{
+	border:2px solid #A4E1DC;
+	width: 100%; 
+	margin-left:-2px;
+}
+
+/* =Connect Page Layout
+----------------------------------------------- */
+
+.connect{
+	border: 2px solid #A4E1DC;
+	background: url(http://pipndipyoga.com/wp-content/uploads/2014/06/264A2245.jpg) no-repeat;
+	background-size: 100%;
+	width: 1000px;
+	text-align: left;
+	padding: 10pt 0 20pt 20pt;
+	margin-left:  -65px;
+	font-size: 1.5em;
+	color: white;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	}
 
 /* =Footer
 ----------------------------------------------- */
@@ -1444,6 +1603,7 @@ object {
 }
 .commentlist ul.children {
 	margin: 0 0 0 1.5em;
+
 }
 .commentlist ul.children li:before {
 	content: "";
@@ -1973,5 +2133,94 @@ a#cancel-comment-reply-link:focus {
 			top: auto;
 			left: auto;
 		z-index: 10;
+	}
+}
+
+/*********************** RESPONSIVE  SECTIONS  **********************/
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+.section img {
+	width: 98%;
+	border: 2px solid #A4E1DC;
+}
+
+.section p{
+	text-align: center;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	color: white;
+	background-color: rgba(196, 202, 200, 50);
+	border: 2px solid #A4E1DC;
+	font-size: 1.5em;
+	margin-bottom: 5pt;
+}
+
+.section #check{
+	margin-right: 10px;
+
+	position: relative;
+	top: -3px;
+	*overflow: hidden;
+}
+
+/*  GRID OF FOUR   ============================================================================= */
+
+	
+.span_4_of_4 {
+	width: 100%; 
+}
+
+.span_3_of_4 {
+	width: 74.6%; 
+}
+
+.span_2_of_4 {
+	width: 49.2%; 
+}
+
+.span_1_of_4 {
+	width: 23.8%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%; 
 	}
 }

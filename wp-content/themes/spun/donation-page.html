@@ -1,0 +1,124 @@
+<p align="center" style="font-size: 1.5em;">Help me support the Northern Virginia SPCA. I'm donating all proceeds from my dog stickers. Donate atleast $2 and I will send you the sticker of your choice, donate $5 and I will send you three of you choice. Donations of $15 or more and I'll send you the whole set!</p>
+
+
+<div class="donation-box" id="box-a">
+	<div id="dollar-sign">
+		<sup>$</sup>
+	</div>
+	<div id="dollar-amount"> 
+			2
+	</div>
+	<div class="pic" id="box-a-pic">
+		<img src ="http://localhost:8888/PND/wp-content/uploads/2014/05/explorer.jpg"/>
+	</div>
+</div>
+<div class="donation-box" id="box-b">
+	<div id="dollar-sign">
+		<sup>$</sup>
+	</div>
+	<div id="dollar-amount"> 
+			5
+	</div>
+	<div class="pic" id="box-b-pic">
+		<img src ="http://localhost:8888/PND/wp-content/uploads/2014/05/guru.jpg"/>
+	</div>
+</div>
+<div class="donation-box" id="box-c">
+	<div id="dollar-sign">
+		<sup>$</sup>
+	</div>
+	<div id="dollar-amount"> 
+			15+
+	</div>
+	<div class="pic" id="box-c-pic">
+		<img src ="http://localhost:8888/PND/wp-content/uploads/2014/05/paws4peace.jpg"/>
+	</div>
+</div>
+</div>
+
+
+<div style="padding-top: 40px; margin-bottom:-20px;">
+<p align="center" style="font-size: 2em;">Donate through Amazon, then choose which stickers you like best:</p>
+</div>
+
+<center>
+	<div class="donation-box" id="box-d" style="border-radius:15px;">
+				Donate on Amazon
+	</div>
+</center>
+
+
+<form action="<?php the_permalink(); ?>" method = "post">
+<div class="section group">
+	<div class="col span_1_of_4">
+	<p><input id = "check" type="checkbox" name="sticker[]" value="Explorer" />Explorer</p>
+	<img src ="http://pipndipyoga.com/wp-content/uploads/2014/05/explorer.jpg"/>
+	</div>
+	<div class="col span_1_of_4">
+	<p><input id = "check"  type="checkbox" name="sticker[]" value="Guru" />Guru</p>
+	<img src ="http://pipndipyoga.com/wp-content/uploads/2014/05/Guru.jpg"/>
+	</div>
+	<div class="col span_1_of_4">
+	<p><input id = "check"  type="checkbox" name="sticker[]" value="Paws 4 Peace" />Paws 4 Peace</p>
+	<img src ="http://pipndipyoga.com/wp-content/uploads/2014/05/paws4peace.jpg"/>
+	</div>
+	<div class="col span_1_of_4">
+	<p><input id = "check"  type="checkbox" name="sticker[]" value="Showgirl" />Showgirl</p>
+	<img src ="http://pipndipyoga.com/wp-content/uploads/2014/05/showgirl.jpg"/>
+	</div>
+</div>
+<div class="section group">
+	<div class="col span_1_of_4">
+	<p><input id = "check"  type="checkbox" name="sticker[]" value="Athlete" />Athlete</p>
+	<img src ="http://pipndipyoga.com/wp-content/uploads/2014/05/athlete.jpg"/>
+	</div>
+	<div class="col span_1_of_4">
+	<p><input id = "check"  type="checkbox" name="sticker[]" value="Scientist" />Scientist</p>
+	<img src ="http://pipndipyoga.com/wp-content/uploads/2014/05/Scientist.jpg"/>
+	</div>
+	<div class="col span_1_of_4">
+	<p><input id = "check"  type="checkbox" name="sticker[]" value="Same Paws" />Same Paws</p>
+	<img src ="http://pipndipyoga.com/wp-content/uploads/2014/05/samepaws.jpg"/>
+	</div>
+	<div class="col span_1_of_4">
+	<p><input id = "check"  type="checkbox" name="sticker[]" value="Artist" />Artist</p>
+	<img src ="http://pipndipyoga.com/wp-content/uploads/2014/05/artist.jpg"/>
+	</div>
+</div>
+
+
+<style type="text/css">
+  .error{
+    padding: 5px 9px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 3px;
+  }
+ 
+  .success{
+    padding: 5px 9px;
+    border: 1px solid green;
+    color: green;
+    border-radius: 3px;
+  }
+ 
+  form span{
+    color: red;
+  }
+</style>
+ <div style="width: 800px;">
+ <div style="float: left;"> <p><label for="name">Name: <span>*</span> <br><input type="text" name="message_name" value="<?php echo esc_attr($_POST['message_name']); ?>"></label></p></div>
+ <div style="float: left;">&nbsp;</div>
+  <div style="float: left;"> <p><label for="message_email">Email: <span>*</span> <br><input type="text" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>"></label></p>
+  </div>
+  <div style="float: left;">&nbsp;</div>
+ <div style="float: left;"> <p><label for="message_address">Mailing Address: <span>*</span> <br><input width ="300px" type="text" name="message_address" value="<?php echo esc_attr($_POST['message_address']); ?>"></label></p></div>
+ <br style="clear: left;" />
+</div>
+<!--     <p><label for="name">Name: <span>*</span> <br><input type="text" name="message_name" value="<?php echo esc_attr($_POST['message_name']); ?>"></label></p>
+    <p><label for="message_email">Email: <span>*</span> <br><input type="text" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>"></label></p>
+    <p><label for="message_address">Mailing Address:   <span>*</span> <br><input type="text" name="message_address" value="<?php echo esc_attr($_POST['message_address']); ?>"></label></p> -->
+    <input type="hidden" name="submitted" value="1">
+  <p><input type="submit" name="stickerSubmit" value="Submit"/></p>
+  </form>   <!-- THIS FORM IS USED FOR THE WHOLE PAGE -->
+
